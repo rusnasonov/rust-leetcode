@@ -7,6 +7,7 @@ pub struct ListNode {
   next: Option<Box<ListNode>>
 }
 
+#[allow(dead_code)]
 impl ListNode {
   #[inline]
   fn new(val: i32) -> Self {
@@ -17,6 +18,7 @@ impl ListNode {
   }
 }
 
+#[allow(dead_code)]
 impl Solution {
     pub fn remove_elements(mut head: Option<Box<ListNode>>, val: i32) -> Option<Box<ListNode>> {
         let mut cur = &mut head;
